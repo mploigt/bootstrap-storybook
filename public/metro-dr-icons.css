@@ -1,7 +1,7 @@
 @font-face {
   font-family: "metro-dr-icons";
-  src: url("/fonts/metro-dr-icons-1481545309.eot");
-  src: url("/fonts/metro-dr-icons-1481545309.eot?#iefix") format("eot"), url("/fonts/metro-dr-icons-1481545309.woff2") format("woff2"), url("/fonts/metro-dr-icons-1481545309.woff") format("woff"), url("/fonts/metro-dr-icons-1481545309.ttf") format("truetype"), url("/fonts/metro-dr-icons-1481545309.svg#metro-dr-icons-1481545309") format("svg");
+  src: url("fonts/metro-dr-icons-1481545309.eot");
+  src: url("fonts/metro-dr-icons-1481545309.eot?#iefix") format("eot"), url("fonts/metro-dr-icons-1481545309.woff2") format("woff2"), url("fonts/metro-dr-icons-1481545309.woff") format("woff"), url("fonts/metro-dr-icons-1481545309.ttf") format("truetype"), url("fonts/metro-dr-icons-1481545309.svg#metro-dr-icons-1481545309") format("svg");
   font-weight: normal;
   font-style: normal; }
 

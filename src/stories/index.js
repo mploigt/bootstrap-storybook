@@ -35,6 +35,12 @@ storiesOf('Bootstrap', module)
                             <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg" target="_blank">https://www.youtube.com/watch?v=gqOEoUR5RHg</a>
                         </dd>
 
+                        <dt>Interactive Tutorial</dt>
+                        <dd>
+                            <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">http://www.tutorialrepublic.com/twitter-bootstrap-tutorial</a>
+                        </dd>
+
+
                     </dl>
 
                 </Col>
