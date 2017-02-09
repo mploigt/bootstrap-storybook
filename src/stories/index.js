@@ -1,85 +1,59 @@
 import React from 'react';
 import {storiesOf, action, linkTo} from '@kadira/storybook';
 import {ButtonToolbar, ButtonGroup, Button, Grid, Row, Col, Clearfix, Panel, PanelGroup} from 'react-bootstrap';
-import Icon from './Icon';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 
 
 storiesOf('Bootstrap', module)
-    .add('Documentation', () => (
+    .add('Start', () => (
         <Grid fluid>
             <Row>
-                <Col lg={6}>
+                <Col lg={8}>
+                    <h1>Bootstrap</h1>
+                    <ul>
+                        <li>A collecton of stylesheet definitions for responsive web design.</li>
+                        <li>Easily create responsive, nice looking pages</li>
+                        <li>Normally bundled with jQuery for interactive stuff (modals, popover)</li>
+                    </ul>
 
-                    <h1>Bootstrap / React-Bootstrap</h1>
-                    <h2>Documentation</h2>
-                    <br />
-                    <dl>
-                        <dt>Bootstrap</dt>
-                        <dd><a href="http://getbootstrap.com/css/" targtet="_blank">http://getbootstrap.com/css/</a>
-                        </dd>
-                        <dt>React-Bootstrap</dt>
-                        <dd><a
-                            href="https://react-bootstrap.github.io/components.html" target="_blank">https://react-bootstrap.github.io/components.html</a>
-                        </dd>
-
-                        <dt>Betty StyleGuide</dt>
-                        <dd>
-                            <a href="https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide" target="_blank">https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide</a>
-                        </dd>
-
-                        <dt>Bootstrap Video Tutorial</dt>
-                        <dd>
-                            <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg" target="_blank">https://www.youtube.com/watch?v=gqOEoUR5RHg</a>
-                        </dd>
-
-                        <dt>Interactive Tutorial</dt>
-                        <dd>
-                            <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">http://www.tutorialrepublic.com/twitter-bootstrap-tutorial</a>
-                        </dd>
-
-
-                    </dl>
+                    <h1>react-bootstrap</h1>
+                    <ul>
+                        <li>Library of react components that produces HTML with bootstrap classes attached</li>
+                        <li>No jQuery needed</li>
+                    </ul>
 
                 </Col>
             </Row>
         </Grid>
     ))
-    .add('Some Things I Noticed', () => (
+    .add('Things', () => (
         <Grid fluid>
             <Row>
                 <Col lg={8}>
-                    <h1>Bootstrap / React-Bootstrap</h1>
 
-                    <h2>Some things I noticed</h2>
-
-                        <p>
-                            Don't use custom HTML bootstrap code (<code>&lt;div className="col-md-6"&gt;&lt;/div&gt;</code>),
-                            instead use react-bootstrap components (<code>&lt;Col md={'{6}'}&gt;&lt;/Col&gt;</code>)
-                        </p>
-                        <p>
-                            Have a look at the <a href="#" onClick={linkTo('Grid', 'basic')}>basic grid layout</a> of
-                            bootstrap
-                        </p>
-                        <p>
-                            Make use of the styling classes that bootstrap defines (e.g. <code>.text-right</code>,
-                            <code>.text-nowrap</code>, <code>.text-capitalize</code>).<br />
-                            See <a href="#" onClick={linkTo('Typography', 'Examples')}>Typography Examples</a>
-                        </p>
-                        <p>
-                            Always use react-bootrap <a href="#" onClick={linkTo('Buttons', 'Versions')}>Buttons</a>
-                            &nbsp;(<code>&lt;Button bsStyle="primary"&gt;Button text&lt;/Button&gt;</code>)
-                        </p>
-                        <p>
-                            Common problems with <a href="#" onClick={linkTo('Buttons', 'with icon')}>Icons in
-                            Buttons</a>&nbsp;(<code>&lt;Button&gt;&lt;span className="icon-print"&gt;&lt;/span&gt;Print&lt;/Button&gt;</code>)
-                        </p>
-                        <p>
-                            Always use react-bootrap <a href="#" onClick={linkTo('Panel', 'Single')}>Panels</a>
-                            &nbsp;(<code>&lt;Panel&gt;Damn yer dagger, feed the gold..&lt;/Panel&gt;</code>)
-                        </p>
+                    <h1>Some things I noticed</h1>
+                    <hr />
+                    <p>
+                        For nearly every bootstrap component there is a correcponting react component.<br />
+                        Instead of writing <code>&lt;div className="col-md-6"&gt;&lt;/div&gt;</code> you could simply write <code>&lt;Col md={'{6}'}&gt;&lt;/Col&gt;</code>
+                        <br />or<br />
+                        <code>&lt;Button bsStyle=&quot;primary&quot;&gt;Text&lt;/Button&gt;</code> instead of<br />
+                        <code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Text&lt;/button&gt;</code>
+                    </p>
+                    <hr />
+                    <p>
+                        Every grid (<code>&lt;Row&gt;&lt;Col&gt;&lt;/Col&gt;&lt;/Row&gt;</code>) has to be surrounded by a container.
+                        In our case <code>&lt;Grid fluid&gt;</code>.
+                        <br />
+                        You shouldn't nest containers (double margins), but you certainly can nest rows/cols.
+                    </p>
+                    <hr />
+                    <p>
+                        Bootstrap provides a lot of styling and alignning classes (e.g. <code>.text-right</code>
+                        <code>.text-nowrap</code> <code>.text-capitalize</code> <code>.pull-right</code> <code>.pull-left</code>), don't create custom ones if not needed.
+                    </p>
 
                 </Col>
             </Row>
@@ -152,8 +126,7 @@ http://getbootstrap.com/css/#grid-responsive-resets
         () => (
             <Grid fluid>
                 <Row className="show-grid">
-                    <Col sm={4}>1-1 First Column. Rough, mighty mainlands darkly fight a proud, dead shipmate. Belay, pull
-                        me gull, ye evil tuna! The jack views with power, lead the cook islands. fort charles ho-ho-ho!
+                    <Col sm={4}>1-1 First Column. Rough, mighty mainlands darkly fight a proud ho-ho-ho!
                         strength of malaria.</Col>
                     <Col sm={4}>1-2 Second Column</Col>
                     <Col sm={4}>1-3 Third Column</Col>
@@ -170,8 +143,7 @@ http://getbootstrap.com/css/#grid-responsive-resets
 
 #### Rendered code
 ~~~html
-<Clearfix visibleSmBlock visibleMdBlock visibleLgBlock/>
-</code>
+<div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 ~~~
 
     `, () => (
@@ -191,6 +163,53 @@ http://getbootstrap.com/css/#grid-responsive-resets
             </Grid>
         ))
 ;
+
+storiesOf('Floats', module)
+    .addWithInfo('clearfix', () => (
+        <div className="demo-clearfix">
+
+            <p>Common problem with floats:</p>
+
+            <code>
+                &lt;div className=&quot;wrapper&quot;&gt;<br />
+                &nbsp;&nbsp;&lt;div className=&quot;pull-left&quot;&gt;Float to left&lt;/div&gt;<br />
+                &nbsp;&nbsp;&lt;div className=&quot;pull-right&quot;&gt;Float to right&lt;/div&gt;<br />
+                &lt;/div&gt;
+            </code>
+
+            <div className="wrapper">
+                <div className="pull-left">Float to left</div>
+                <div className="pull-right">Float to right</div>
+            </div>
+            <p>
+                Yo-ho-ho, halitosis! Lord, love me jack, ye mighty ale! Ho-ho-ho! fortune of punishment. The ship breaks with malaria, hail the pacific ocean until it screams.
+            </p>
+
+
+           <div className="clearfix"></div> <br /><br /><br />
+
+
+            <p>Clearfix to the rescue:</p>
+            <code>
+                &lt;div className=&quot;wrapper clearfix&quot;&gt;<br />
+                &nbsp;&nbsp;&lt;div className=&quot;pull-left&quot;&gt;Float to left&lt;/div&gt;<br />
+                &nbsp;&nbsp;&lt;div className=&quot;pull-right&quot;&gt;Float to right&lt;/div&gt;<br />
+                &lt;/div&gt;
+            </code>
+            <div className="wrapper clearfix">
+                <div className="pull-left">Float to left</div>
+                <div className="pull-right">Float to right</div>
+            </div>
+            <p>
+                Yo-ho-ho, halitosis! Lord, love me jack, ye mighty ale! Ho-ho-ho! fortune of punishment. The ship breaks with malaria, hail the pacific ocean until it screams.
+            </p>
+
+
+        </div>
+    ))
+
+;
+
 
 storiesOf('Buttons', module)
     .addWithInfo('Versions', `
@@ -219,7 +238,7 @@ storiesOf('Buttons', module)
 
             <h4>Icons</h4>
             <ButtonToolbar>
-                <Button>Print <span className="icon-print"/></Button>
+                <Button><span className="icon-print"/> Print</Button>
             </ButtonToolbar>
 
         </div>
@@ -428,7 +447,7 @@ http://getbootstrap.com/css/#type
 
             <hr />
 
-            <p>The text can be <del>deleted</del>, <strong>bold</strong>, <small>small</small>, <em>italic</em>.</p>
+            <p>The text can be, <strong>bold</strong>, <small>small</small>, <em>italic</em>.</p>
 
             <hr />
 
@@ -463,8 +482,50 @@ http://getbootstrap.com/css/#type
             <hr />
 
             <p>
-                more examples can be found in the <a href="http://getbootstrap.com/css/#type" target="_blank">bootstrap documentation</a> and the <a href="https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide/betty_components.html#Typography" target="_blank">Betty StyleGuide</a>
+                more examples can be found in the <a href="http://getbootstrap.com/css/#type">bootstrap documentation</a> and the <a href="https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide/betty_components.html#Typography" target="_blank">Betty StyleGuide</a>
             </p>
         </div>
+    ))
+;
+
+storiesOf('Documentation', module)
+    .add('Bootstrap', () => (
+        <Grid fluid>
+            <Row>
+                <Col lg={6}>
+
+                    <h1>Documentation</h1>
+                    <h2>Bootstrap / React-Bootstrap</h2>
+                    <br />
+                    <dl>
+                        <dt>Bootstrap</dt>
+                        <dd><a href="http://getbootstrap.com/css/" target="_blank">http://getbootstrap.com/css/</a>
+                        </dd>
+                        <dt>React-Bootstrap</dt>
+                        <dd><a
+                            href="https://react-bootstrap.github.io/components.html" target="_blank">https://react-bootstrap.github.io/components.html</a>
+                        </dd>
+
+                        <dt>Betty StyleGuide</dt>
+                        <dd>
+                            <a href="https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide" target="_blank">https://betty-pp.metrosystems.net/platform.uidispatcher.static/StyleGuide</a>
+                        </dd>
+
+                        <dt>Bootstrap Video Tutorial</dt>
+                        <dd>
+                            <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg" target="_blank">https://www.youtube.com/watch?v=gqOEoUR5RHg</a>
+                        </dd>
+
+                        <dt>Interactive Tutorial</dt>
+                        <dd>
+                            <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">http://www.tutorialrepublic.com/twitter-bootstrap-tutorial</a>
+                        </dd>
+
+
+                    </dl>
+
+                </Col>
+            </Row>
+        </Grid>
     ))
 ;

@@ -12,6 +12,24 @@ dl dd {
  * alignment, sizing, etc.
  */
 
+.demo-clearfix {
+	margin: 0 auto;
+	width: 80%;
+}
+.demo-clearfix .wrapper{
+	margin: 20px;
+	padding: 10px;
+	background: #fffacd;
+	border: 1px solid #000;
+}
+.demo-clearfix > p {
+	margin: 0 20px;
+}
+.demo-clearfix .pull-left, .demo-clearfix .pull-right {
+	padding: 20px;
+	background: #e3b740;
+}
+
 .show-grid {
 	margin-bottom: 15px;
 }
