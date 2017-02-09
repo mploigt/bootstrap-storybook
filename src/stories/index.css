@@ -1,10 +1,11 @@
 body {
-	padding: 10px;
+    padding: 10px;
 }
 
 dl dd {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
+
 /*
  * Grid examples
  *
@@ -13,88 +14,101 @@ dl dd {
  */
 
 .demo-clearfix {
-	margin: 0 auto;
-	width: 80%;
+    margin: 0 auto;
+    width: 80%;
 }
-.demo-clearfix .wrapper{
-	margin: 20px;
-	padding: 10px;
-	background: #fffacd;
-	border: 1px solid #000;
+
+.demo-clearfix .wrapper {
+    margin: 20px;
+    padding: 10px;
+    background: #fffacd;
+    border: 1px solid #000;
 }
+
 .demo-clearfix > p {
-	margin: 0 20px;
+    margin: 0 20px;
 }
+
 .demo-clearfix .pull-left, .demo-clearfix .pull-right {
-	padding: 20px;
-	background: #e3b740;
+    padding: 20px;
+    background: #e3b740;
 }
 
 .show-grid {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
+
 .show-grid [class^="col-"] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #eee;
-	background-color: rgba(86,61,124,.15);
-	border: 1px solid #ddd;
-	border: 1px solid rgba(86,61,124,.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86, 61, 124, .2);
 }
 
 .bty-price.cip:before, .price.cip:before, .bty-price.manual:before, .price.manual:before {
-	content: "";
+    content: "";
 }
 
 .icon-price-2:before, .bty-price.volume-discount:before, .price.volume-discount:before {
-	content: "";
+    content: "";
 }
 
 .bty-price, .price {
-	font-weight: 400;
-	color: #333333;
-	font-size: 14px;
-	/* Styles for prices with icons */
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    /* Styles for prices with icons */
 }
+
 .bty-price.primary, .price.primary {
-	color: #000000;
-	font-weight: 500;
+    color: #000000;
+    font-weight: 500;
 }
+
 .bty-price.secondary, .bty-price.vat, .bty-price.deposit, .bty-price.piece, .price.secondary, .price.vat, .price.deposit, .price.piece {
-	font-weight: 400;
-	color: #666666;
-	font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    font-size: 12px;
 }
+
 .bty-price.cip, .price.cip {
-	color: #3366cc;
+    color: #3366cc;
 }
+
 .bty-price.promotion, .price.promotion {
-	color: #d90000;
+    color: #d90000;
 }
+
 .bty-price.promotion-strike, .price.promotion-strike {
-	text-decoration: line-through;
-	color: #666666;
-	font-size: 14px;
+    text-decoration: line-through;
+    color: #666666;
+    font-size: 14px;
 }
+
 .bty-price.volume-discount.active, .price.volume-discount.active {
-	color: #d90000;
+    color: #d90000;
 }
+
 .bty-price.manual, .price.manual {
-	/* for now, just as the cip price */
-	color: #3366cc;
+    /* for now, just as the cip price */
+    color: #3366cc;
 }
+
 .bty-price.totals, .price.totals {
-	font-weight: 500;
+    font-weight: 500;
 }
+
 .bty-price:before, .price:before {
-	font-family: "metro-dr-icons", sans-serif !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	padding-right: 4px;
+    font-family: "metro-dr-icons", sans-serif !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 4px;
 }
